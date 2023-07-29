@@ -68,3 +68,20 @@
     height: 40px;
   }
 }
+
+.sidebar .active {
+  background-color: #ff9501;
+}
+
+.sidebar .submenu .active {
+  background-color: transparent;
+  color: #ff9501;
+}
+
+.sidebar svg path {
+  fill: white;
+}
+
+.sidebar .submenu .active svg path {
+  fill: #ff9501;
+}

@@ -8,6 +8,7 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
+      errorColor: "#FF4459",
       orangeDark: "#B55B0C",
       neutral: "#6C7275",
       white: "#FFFFFF",
@@ -25,6 +26,7 @@ export default {
       fade: "#A2A2A2",
       fadeHigh: "#585A5C",
       fadeSemi: "#444444",
+      fadeBold: "#414141",
       fadeMid: "#B8B8B8",
       fadeReg: "#A9A9A9",
       fadeLight: "#475467",

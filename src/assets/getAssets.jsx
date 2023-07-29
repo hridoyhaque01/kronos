@@ -4,5 +4,14 @@ import logo from "./images/logo.png";
 import randerImgOne from "./images/randerImageOne.png";
 import randerImgThree from "./images/randerImageThree.png";
 import randerImgTwo from "./images/randerImageTwo.png";
+import whiteLogo from "./images/whiteLogo.png";
 
-export { banner, circle, logo, randerImgOne, randerImgThree, randerImgTwo };
+export {
+  banner,
+  circle,
+  logo,
+  randerImgOne,
+  randerImgThree,
+  randerImgTwo,
+  whiteLogo,
+};
