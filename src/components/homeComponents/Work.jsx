@@ -25,10 +25,10 @@ function Work({ width }) {
     },
   ];
   return (
-    <section className="px-4 mt-8 sm:mt-16 lg:mt-36">
+    <section className="px-4 mt-8 sm:mt-16 lg:mt-36 font-openSans">
       <div className={width}>
         <div className="sm:max-w-[20rem] md:max-w-[36rem] lg:max-w-[48rem] mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl lg:text-[44px] font-openSans font-semibold">
+          <h2 className="text-2xl md:text-4xl lg:text-[44px]  font-semibold">
             How does Kronos work?
           </h2>
           <p className="text-xs md:text-lg text-fade font-openSans t mt-5">
@@ -38,16 +38,18 @@ function Work({ width }) {
             licensing images and videos.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-5 md:gap-10 lg:gap-24 mt-5 md:mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-5 md:mt-14">
           {works?.map((work) => (
-            <div className="text-center" key={work?.id}>
+            <div className="text-center max-w-[340px] mx-auto" key={work?.id}>
               <span className="w-11 h-11 flex items-center justify-center bg-fadeLightRgb rounded-full font-semibold text-xl mx-auto">
                 {work?.tag}
               </span>
-              <h4 className="font-openSans text-lg font-semibold mt-3 mb-4">
+              <h4 className="font-openSans text-lg font-semibold mt-4 mb-3">
                 {work?.title}
               </h4>
-              <p className="text-fade font-openSans text-lg">{work?.text}</p>
+              <p className="text-fade font-openSans text-sm sm:text-lg">
+                {work?.text}
+              </p>
             </div>
           ))}
         </div>

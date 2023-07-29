@@ -4,7 +4,7 @@ import { logo } from "../../../assets/getAssets";
 
 function Navbar() {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm p-6 absolute left-0 right-0 top-0 font-satoshi font-medium">
+    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm p-6 absolute left-0 right-0 top-0 font-satoshi font-medium font-openSans">
       <nav
         className="max-w-[78rem] w-full mx-auto px-2 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
@@ -50,20 +50,28 @@ function Navbar() {
         </div>
         <div
           id="navbar-image-and-text-2"
-          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:flex items-center justify-between z-[60] bg-blackReg sm:bg-transparent p-6 rounded-md"
         >
-          <div className="flex flex-col gap-6 lg:gap-20 bg-white-08 border border-white-08 max-w-max ml-auto py-4 px-6 rounded-full mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0">
+          <div className="flex flex-col gap-6 md:gap-10 lg:gap-20 sm:bg-fadeMidRgb sm:border sm:border-fadeMidRgb w-full sm:max-w-max mx-auto sm:py-3.5 sm:px-8 rounded-md sm:rounded-full  sm:flex-row sm:items-center sm:justify-end ">
             <Link className="" to="/history" aria-current="page">
-              History
+              About
             </Link>
             <Link className="" to="/analytics">
-              Analytics
+              Pricing
             </Link>
             <Link className="" to="/settings">
-              Settings
+              Contact
             </Link>
             <Link className="" to="/support">
-              Contact Support
+              Support
+            </Link>
+          </div>
+          <div className="mt-6 sm:mt-0">
+            <Link
+              to="/signin"
+              className="inline-block py-3.5 px-8 bg-orangeDark text-white font-semibold rounded-[48px]"
+            >
+              Sign In
             </Link>
           </div>
         </div>
